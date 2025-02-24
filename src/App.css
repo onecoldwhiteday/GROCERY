@@ -1,5 +1,58 @@
 .App {
   text-align: center;
+  height: 100dvh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  align-items: center;
+  * {
+    /* Adaptive */
+    font-size: 32px;
+  }
+}
+
+.main-container {
+  width: 414px;
+  place-self: center;
+}
+.shoplist {
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.shoplist-item {
+  list-style: none;
+  /* border: 1px solid black; */
+  padding: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.shoplist-check {
+  cursor: pointer;
+  transform: scale(2.5);
+
+  &:checked ~ .shoplist-input {
+    text-decoration: line-through;
+    pointer-events: none;
+  }
+}
+
+.shoplist-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-color: black;
+  }
 }
 
 .App-logo {
