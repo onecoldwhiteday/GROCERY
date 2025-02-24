@@ -6,23 +6,26 @@ function App() {
     <div className="App">
       <div className="main-container">
         <ul className="shoplist">
-          <li className="shoplist-item">
-            <input className="shoplist-check" checked type="checkbox" />
-            <input className="shoplist-input" value={"Chicken"} />
+          <li>
+            <label className="shoplist-item">
+              <input className="shoplist-check" checked type="checkbox" />
+              <span>Shrooms</span>
+            </label>
           </li>
-          <li className="shoplist-item">
-            <input className="shoplist-check" type="checkbox" />
-            <input className="shoplist-input" value={"Pasta"} />
+          <li>
+            <label className="shoplist-item">
+              <input className="shoplist-check" type="checkbox" />
+              <span>Chicken</span>
+            </label>
           </li>
-          <li className="shoplist-item">
-            <input className="shoplist-check" type="checkbox" />
-            <input className="shoplist-input" value={"Shrooms"} />
-          </li>
-          <li className="shoplist-item">
-            <input className="shoplist-check" type="checkbox" />
-            <input className="shoplist-input" placeholder="New..." />
+          <li>
+            <label className="shoplist-item">
+              <input className="shoplist-check" type="checkbox" />
+              <span>Shrooms</span>
+            </label>
           </li>
         </ul>
+        <input className="shoplist-input" placeholder="New..." />
       </div>
     </div>
   );
